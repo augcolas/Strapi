@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <title>Strapi</title>
+
+</head>
+
+<body style="padding-bottom: 72px;">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-middle mb-5">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="mx-2 d-inline-block align-text-center" src="images/Strapi.png" alt="logo">
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presentation">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#details">Plus en détails</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#avantages_inconvenients">Avantages / Inconvénients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#lexique">Lexique</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <!--#region Présentation-->
+        <div class="bg-light p-5 pt-6 rounded" id="presentation">
+            <h1>Présentation</h1>
+
+            <h5 class="mt-5">Qu'est-ce que c'est ?</h5>
+
+            <p class="lead">
+                Strapi est un framework open source qui permet de développer et de déployer rapidement des
+                applications back-end en utilisant Node.js. Il fournit une interface de gestion de contenu
+                <a href="#cms" class="text-info">(CMS Headless)</a>
+                qui permet aux utilisateurs de créer, de modifier et de gérer facilement le contenu de leur site ou de
+                leur
+                application.
+            </p>
+
+            <p class="lead">Strapi a été conçu pour être facile à utiliser et à mettre en place. Son interface est
+                intuitive et sa <a href="https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html"
+                    target="_blank">documentation</a> suffisament détaillée et propose une guide pour démarrer. Il
+                propose aussi
+                beaucoup de personnalisation et permet aux développeurs de créer facilement des
+                extensions et des plugins pour ajouter des fonctionnalités à leur application.
+            </p>
+
+            <p class="lead">Strapi permets aux développeurs de creer une API RESTful sans avoir à se soucier de la
+                configuration de la base
+                de données ou de la gestion des requêtes HTTP. Il prend en charge de nombreuses bases de données, comme
+                MongoDB, PostgreSQL et MySQL, et il offre également des outils de gestion de base de données intégrés
+                qui permettent aux utilisateurs de gérer facilement leur contenu.
+            </p>
+
+            <p class="lead">
+                En résumé, Strapi est un outil pour les développeurs qui souhaitent créer
+                rapidement une API pour leur application sans avoir à gérer de nombreux aspects techniques.
+            </p>
+
+            <h5 class="mt-5">Divers</h5>
+
+            <p class="lead">
+            <ul>
+                <li class="lead">
+                    Strapi a été conçu par une équipe de développeurs dirigée par Aurélien Georget, Alexandre Girard et
+                    Mathieu Dnoyelle. 
+                </li>
+                <li class="lead">
+                    Strapi a
+                    été initialement lancé en 2015 sous le nom de "PencilBlue", mais a été rebaptisé Strapi en 2018
+                </li>
+            </ul>
+            </p>
+
+        </div>
+        <!--#endregion-->
+
+        <!--#region Se lancer-->
+        <div class="bg-light p-5 pt-6 rounded" id="details">
+            <h1>Plus en détails</h1>
+
+            <h5 class="mt-5">Installation</h5>
+            <p class="lead">Pour installer Strapi, vous aurez besoin de Node.js et de npm installés.
+                Si ce n'est pas le cas vous pouvez le faire en vous rendant sur le site de
+                <a href="https://nodejs.org/fr/download/" target="_blank">Node.js</a>
+            </p>
+
+            <p class="lead">Une fois cette étape réalisée, nous pouvons commencer l'installation de strapi avec la
+                commande :</p>
+            <span class="lead bg-dark text-light rounded text-center py-1 px-2">npx create-strapi-app@latest
+                my-project</span>
+
+            <p class="lead">Cette commande permet de créer un projet (my-project) dans la dernière version de strapi
+                (@latest). Ensuite
+                vous pouvez choisir entre le mode "Quickstart" pour faire un projet rapidement (avec SQLite comme base
+                de donnée) ou "Custom" pour
+                personnaliser les paramètres de l'application (comme la base de donnée que vous voulez utiliser et son
+                nom).
+            </p>
+
+            <p class="lead">Si vous avez choisi le mode "Quickstart", votre navigateur ouvrira automatiquement une
+                nouvelle fenêtre pour votre projer</p>
+
+            <p class="lead">si vous avez choisi le mode "Custom", le projet ne
+                sera pas lancer automatiquement, vous pouvez le démarrer en éxecutant cette commande
+                dans le repertoire du projer :
+            </p>
+            <span class="lead bg-dark text-light rounded text-center py-1 px-2">npm run develop</span>
+
+
+            <h5 class="mt-5">personnalisation</h5>
+
+            <p class="lead">Une fois sur la page du projet, il faudra créer un compte pour le premier administrateur
+                en remplissant un formulaire. C'est la seule étape obligatoire, ensuite vous êtes libres de
+                personnaliser la structure de votre API comme vous le voulez. Vous aurez besoin d'accéder au panneau
+                d'administration pour effectuer la plupart de vos création et mises à jours de contenu, il se trouve à
+                cet adresse :
+                <a href="http://localhost:1337/admin" target="_blank">http://localhost:1337/admin</a>
+
+            </p>
+
+            <p class="lead">Ensuite tout se fait via le Content-type Builder. Il permet de creer tous les éléments de
+                notre application.
+                Vous pourrez fournir au content-type Builder toutes les informations nécessaires via des formulaires
+                simples.
+            </p>
+            <p class="lead">Par exemple si vous voulez faire une boutique de vetements, vous pouvez creer une collection
+                "Hauts",
+                saisir toutes ces caractéristiques, sauvegardé (ce qui redémarrera strapi) puis en creer une autre
+                "Tshirts".
+                Vous pouvez lié vos collections (many-to-many, many-to-one, etc.)</p>
+            <p class="lead">
+                Ensuite il faudra ajouter des entrées via le
+                content manager dans
+                votre collection "Tshirts" comme par exemle "simple blanc" ou "vert logo nirvana".
+
+            </p>
+            <p class="lead">
+                Chaque entrée peut etre publier ou non et est donc disponible ou non en temps réel dans l'API
+            </p>
+
+            <p class="lead">
+                Strapi vous permet aussi de gérer simplement les permissions et les rôles de votre application.
+                Depuis l'interface vous pouvez rapidement choisir ce que chaque types d'utilisateurs a le droit ou non
+                de faire avec chaque collection
+            </p>
+
+            <h5 class="mt-5">Utilisation</h5>
+
+            <p class="lead">Une fois les étapes précédentes réalisées vous pourrez utiliser l'API à cette adresse :
+                <a href="http://localhost:1337/api/tshirts" target="_blank">http://localhost:1337/api/tshirts</a>
+            </p>
+
+            <h5 class="mt-5">Notes</h5>
+
+            <p class="lead">
+            <ul>
+                <li class="lead">
+                    strapi permet de créer un token d'API pour restreindre son accès
+                </li>
+                <li class="lead">
+                    le routing est déjà fait et vous pouvez retrouver son fonctionnement dans la documentation
+                    officielle de Strapi (vous pouvez aussi le personnaliser si il ne vous convient pas)
+                </li>
+            </ul>
+            </p>
+
+        </div>
+        <!--#endregion-->
+
+        <!--#region Lexique-->
+        <div class="bg-light p-5 rounded" id="lexique">
+            <h1>Lexique</h1>
+            <h4 class="mt-3" id="cms">CMS Headless</h4>
+            <p class="lead">
+                Un système de gestion de contenu est un outil qui permet aux utilisateurs de créer, de
+                gérer et de publier du contenu sur un site web ou une application de manière simple et intuitive. Les
+                CMS sont souvent utilisés pour gérer les sites web de grande envergure qui ont besoin de mettre à jour
+                fréquemment leur contenu, tels que les sites de nouvelles, les blogs ou les sites e-commerce.
+            </p>
+
+            <p class="lead">Les CMS offrent généralement une interface simple qui permet aux
+                utilisateurs de créer et de publier du contenu sans avoir à connaître les détails techniques du
+                développement web. Ils incluent souvent des fonctionnalités de gestion de contenu avancées, telles que
+                la gestion des versions, la gestion des droits d'accès et la gestion des médias.
+            </p>
+
+            <p class="lead">Un système de gestion de contenu (CMS) headless, également appelé "CMS sans tête", est un
+                type de CMS qui ne gère pas la présentation du contenu. Au lieu de cela, il fournit un backend qui
+                permet aux utilisateurs de créer, de gérer et de publier du contenu, mais il n'inclut pas de frontend
+                pour afficher le contenu au public.
+            </p>
+
+        </div>
+        <!--#endregion-->
+
+    </main>
+
+</body>
+
+</html>
