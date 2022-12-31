@@ -36,6 +36,9 @@
                         <a class="nav-link" href="#avantages_inconvenients">Avantages / Inconvénients</a>
                     </li>
                     <li class="nav-item">
+                        <a href="#concurents" class="nav-link">Concurents</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#lexique">Lexique</a>
                     </li>
                 </ul>
@@ -66,7 +69,8 @@
                 extensions et des plugins pour ajouter des fonctionnalités à leur application.
             </p>
 
-            <p class="lead">Strapi permets aux développeurs de creer une API RESTful sans avoir à se soucier de la
+            <p class="lead">Strapi permets aux développeurs de creer une <a href="#rest" class="text-info">API
+                    RESTful</a> sans avoir à se soucier de la
                 configuration de la base
                 de données ou de la gestion des requêtes HTTP. Il prend en charge de nombreuses bases de données, comme
                 MongoDB, PostgreSQL et MySQL, et il offre également des outils de gestion de base de données intégrés
@@ -84,7 +88,7 @@
             <ul>
                 <li class="lead">
                     Strapi a été conçu par une équipe de développeurs dirigée par Aurélien Georget, Alexandre Girard et
-                    Mathieu Dnoyelle. 
+                    Mathieu Dnoyelle.
                 </li>
                 <li class="lead">
                     Strapi a
@@ -180,12 +184,78 @@
                     strapi permet de créer un token d'API pour restreindre son accès
                 </li>
                 <li class="lead">
-                    le routing est déjà fait et vous pouvez retrouver son fonctionnement dans la documentation
+                    le <a href="#routing" class="text-info">routing</a> est déjà fait et vous pouvez retrouver son
+                    fonctionnement dans la documentation
                     officielle de Strapi (vous pouvez aussi le personnaliser si il ne vous convient pas)
                 </li>
             </ul>
             </p>
 
+        </div>
+        <!--#endregion-->
+
+        <!--#region avantages/inconvénients-->
+        <div class="bg-light p-5 rounded" id="avantages_inconvenients">
+            <h1>Avantages / Inconvénients</h1>
+
+            <h4 class="mt-3" id="avantages">Avantages</h4>
+
+            <ul>
+                <li class="lead">Open source : Strapi est un logiciel open source, ce qui signifie que vous pouvez
+                    utiliser le CMS gratuitement et personnaliser son code source selon vos besoins.</li>
+                <li class="lead">Facile à utiliser : Strapi a une interface utilisateur intuitive et conviviale qui
+                    permet aux utilisateurs de créer et de gérer facilement le contenu de leur site web.
+                </li>
+                <li class="lead">Intégration de l'API : Strapi vous permet de créer une API en quelques clics, ce qui
+                    facilite l'intégration de contenu dans d'autres applications.
+                </li>
+                <li class="lead">Plugins : Strapi offre de nombreux plugins pour ajouter des fonctionnalités
+                    supplémentaires à votre site web, comme la gestion de utilisateurs, la gestion de fichiers ou
+                    l'intégration de services de paiement.</li>
+            </ul>
+
+            <h4 class="mt-3" id="avantages">Inconvénients</h4>
+
+            <ul>
+                <li class="lead">Nécessite une certaine connaissance en développement : Pour utiliser pleinement les
+                    fonctionnalités de Strapi, il est recommandé d'avoir des connaissances en développement web et en
+                    JavaScript.</li>
+                <li class="lead">Documentation : Bien que la documentation de Strapi soit relativement complète, elle
+                    peut être difficile à trouver pour certaines fonctionnalités avancées.</li>
+                <li class="lead">Support limité : étant donné que Strapi est un projet open source, il n'y a pas de
+                    support commercial disponible. Vous devrez compter sur la communauté en ligne pour obtenir de l'aide
+                    en cas de problème.</li>
+            </ul>
+
+        </div>
+        <!--#endregion-->
+
+        <!--#region Concurrents-->
+        <div class="bg-light p-5 rounded">
+            <h1>Concurrents</h1>
+
+            <ul>
+                <li class="lead">Express.js: Express.js est un framework back-end populaire pour Node.js qui permet aux
+                    développeurs de créer rapidement des applications web et des API. Il est conçu pour être facile à
+                    utiliser et à mettre en place, et il offre une grande flexibilité pour la personnalisation et
+                    l'extension.</li>
+                <li class="lead">Rails: Rails est un framework back-end populaire pour le développement d'applications
+                    web en utilisant le langage Ruby. Il inclut de nombreuses fonctionnalités pratiques pour la création
+                    d'applications web, telles que la gestion de la base de données et la gestion des requêtes HTTP.
+                </li>
+                <li class="lead">Django: Django est un framework back-end open source pour le développement
+                    d'applications web en utilisant le langage Python. Il inclut un certain nombre de fonctionnalités
+                    pratiques pour la création d'applications web, telles que la gestion de la base de données et la
+                    gestion des formulaires.
+                </li>
+                <li class="lead">WordPress: WordPress est un CMS open source populaire qui permet aux utilisateurs de
+                    créer et de gérer facilement le contenu de leur site web. Il inclut une interface utilisateur
+                    conviviale et de nombreuses fonctionnalités de gestion de contenu avancées.
+                </li>
+            </ul>
+
+            <p class="lead">Il est important de noter que chaque outil a ses propres avantages et inconvénients, et il
+                est important de choisir celui qui convient le mieux aux besoins de votre projet.</p>
         </div>
         <!--#endregion-->
 
@@ -212,6 +282,31 @@
                 pour afficher le contenu au public.
             </p>
 
+            <h4 class="mt-3" id="rest">API RESTful</h4>
+
+            <p class="lead"> C'est une interface de programmation d'applications (API) qui utilise le protocole HTTP
+                pour
+                obtenir des
+                données et provoquer des actions sur ces données. Elle est basée sur l'architecture REST
+                (representational state transfer), qui est un style de conception pour les systèmes distribués.</p>
+            <p class="lead">Une API RESTful suit certaines conventions pour permettre une communication efficace entre
+                les
+                différentes parties d'un système. Elle utilise des verbes HTTP tels que GET, POST, PUT et DELETE pour
+                effectuer des opérations sur les ressources identifiées par des URLs. Elle utilise également le format
+                de données JSON pour transmettre des données entre le client et le serveur.</p>
+            <p class="lead"> Les API RESTful sont utilisées couramment dans le développement de logiciels pour permettre
+                à
+                différentes applications de communiquer entre elles de manière standardisée. Elles sont particulièrement
+                utiles lorsqu'il s'agit de créer des applications qui s'intègrent à d'autres services ou qui sont
+                accessibles depuis différents appareils et plateformes.</p>
+
+            <h4 class="mt-3" id="routing">Routing</h4>
+
+            <p class="lead">
+                C'est le processus de définition des chemins d'accès aux différentes ressources d'une API. En d'autres
+                termes, c'est le système qui permet de déterminer comment une API doit traiter les requêtes entrantes en
+                fonction de l'URL (Uniform Resource Locator) de la requête.
+            </p>
         </div>
         <!--#endregion-->
 
